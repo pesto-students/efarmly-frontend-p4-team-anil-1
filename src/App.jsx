@@ -1,11 +1,22 @@
 import React from 'react';
-import './App.css';
 
+import { CssBaseline } from '@mui/material';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+import Layout from './components/molecules/Layout';
+import Routers from './pages/Routers';
+
+const theme = createTheme();
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World </h1>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Layout>
+        <main className="main">
+          <Routers />
+        </main>
+      </Layout>
+    </ThemeProvider>
   );
 }
 
