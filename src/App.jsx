@@ -1,20 +1,26 @@
 import React from 'react';
 
-import { CssBaseline } from '@mui/material';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Box, CssBaseline } from '@mui/material';
+import { styled, ThemeProvider } from '@mui/material/styles';
 
 import Layout from './components/molecules/Layout';
 import Routers from './pages/Routers';
+import theme from './styles/theme';
 
-const theme = createTheme();
+const MuBox = styled(Box)(({ theme }) => ({
+  background: theme.palette.gradient.pageBackground,
+  opacity: 0.2,
+}
+));
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Layout>
-        <main className="main">
+        <MuBox className="main">
           <Routers />
-        </main>
+        </MuBox>
       </Layout>
     </ThemeProvider>
   );
