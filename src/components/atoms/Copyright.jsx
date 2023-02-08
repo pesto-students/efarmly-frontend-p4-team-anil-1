@@ -9,7 +9,7 @@ function Copyright(props) {
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
       <Link href="#" underline="none">
-        Working Wallet{' '}
+        eFarmly{' '}
       </Link>
       {new Date().getFullYear()}
     </Typography>
