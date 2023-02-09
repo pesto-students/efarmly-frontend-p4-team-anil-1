@@ -12,7 +12,7 @@ function AppHeader() {
     <AppBar position="relative">
       <Toolbar>
         <Typography component="h1" variant="h5" noWrap sx={{ flexGrow: 1 }}>
-          Wallet Support System
+          eFarmly
         </Typography>
         <IconButton color="inherit">
           {/* <Badge badgeContent={4} color="secondary"> */}

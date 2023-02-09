@@ -9,7 +9,7 @@ import theme from './styles/theme';
 
 const MuBox = styled(Box)(({ theme }) => ({
   background: theme.palette.gradient.pageBackground,
-  opacity: 0.2,
+  opacity: 0.8,
 }
 ));
 
